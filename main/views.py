@@ -48,12 +48,12 @@ def contact(request):
         email = instance.email
         message = instance.message
 
-        EmailMessage(
-            'New message from %s' %name,
-            'Hi admin, new message form this email address: %s\n\n Message: %s' %(email, message),
-            conf_settings.EMAIL_HOST_USER,
-            ['a.s.2013.hts@gmail.com', ],
-        ).send()
+        # EmailMessage(
+        #     'New message from %s' %name,
+        #     'Hi admin, new message form this email address: %s\n\n Message: %s' %(email, message),
+        #     conf_settings.EMAIL_HOST_USER,
+        #     ['a.s.2013.hts@gmail.com', ],
+        # ).send()
 
         form.save()
 
